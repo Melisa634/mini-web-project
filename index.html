@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <title>MësoDukeLuajtur</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eeeaff;
+            margin: 0;
+            color: #333;
+        }
+
+        header {
+            background: #5946d2;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        nav {
+            background: #4032a3;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        section {
+            background: white;
+            max-width: 700px;
+            margin: 25px auto;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        h2 {
+            color: #5946d2;
+        }
+
+        button {
+            background: #5946d2;
+            color: white;
+            padding: 12px;
+            margin: 5px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #5946d2;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🎮 MësoDukeLuajtur</h1>
+    <p>Mëso, luaj dhe zbulo gjëra të reja!</p>
+</header>
+
+<nav>
+    <a href="#rreth">Rreth faqes</a>
+    <a href="#perfitimet">Përfitimet</a>
+    <a href="#kuizi">Kuizi</a>
+</nav>
+
+<section id="rreth">
+    <h2>Mirë se vini në faqen time!</h2>
+    <p>
+        Përshëndetje! Kjo faqe është krijuar për të treguar
+        se si mund të mësojmë përmes lojërave.
+    </p>
+    <p>
+        Qëllimi i kësaj faqeje është ta bëjë mësimin më
+        interesant, argëtues dhe më të lehtë për nxënësit.
+    </p>
+</section>
+
+<section id="perfitimet">
+    <h2>Pse të mësojmë përmes lojërave?</h2>
+    <p>🧠 Zhvillojmë mendimin dhe kreativitetin.</p>
+    <p>🎯 Mësojmë duke u argëtuar.</p>
+    <p>🤝 Bashkëpunojmë me të tjerët.</p>
+    <p>⭐ Testojmë njohuritë tona.</p>
+</section>
+
+<section id="kuizi">
+    <h2>🧠 Provoje kuizin!</h2>
+    <p>Cili planet njihet si Planeti i Kuq?</p>
+
+    <button onclick="kontrollo('Toka')">Toka</button>
+    <button onclick="kontrollo('Marsi')">Marsi</button>
+    <button onclick="kontrollo('Hëna')">Hëna</button>
+
+    <p id="rezultati"></p>
+</section>
+
+<section>
+    <h2>Çfarë përfitojmë?</h2>
+    <p>
+        Përmes lojërave mund të mësojmë gjëra të reja,
+        të zgjidhim probleme dhe të marrim pjesë më aktivisht
+        në procesin e mësimit.
+    </p>
+</section>
+
+<footer>
+    <p>Faleminderit që vizituat faqen time! 💜</p>
+</footer>
+
+<script>
+    function kontrollo(pergjigjja) {
+        if (pergjigjja === "Marsi") {
+            document.getElementById("rezultati").textContent =
+                "Saktë! Urime! 🎉";
+        } else {
+            document.getElementById("rezultati").textContent =
+                "Provo përsëri!";
+        }
+    }
+</script>
+
+</body>
+</html>
